@@ -1,10 +1,11 @@
-let username = getElementById(username);
-let distance = getElementById(distance);
-let age = getElementById(age);
-let generate = getElementById(generate);
-let cancel = getElementById(cancel);
+let username = document.getElementById("username");
+console.log(username);
+let distance = document.getElementById('distance');
+let age = document.getElementById('age');
+let generate = document.getElementById('generate');
+let cancel = document.getElementById('cancel');
 
-generate.addEventListener (click,
+generate.addEventListener ('click',
     function () {
         document.getElementById("passenger").innerHTML= username.value;
         document.getElementById("carriage").innerHTML= username;
@@ -12,4 +13,4 @@ generate.addEventListener (click,
         document.getElementById("price").innerHTML= username;
 
     }
-    )
+    );
