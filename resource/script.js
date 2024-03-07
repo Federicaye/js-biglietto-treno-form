@@ -15,15 +15,18 @@ generate.addEventListener ('click',
 
         let price = parseInt(distance.value) * 0.21;
 
-        if (age === "over-65") {
-            document.getElementById("price").innerHTML= (parseInt(price) * 0.8).toFixed(2);
+        if (age.value === "over-65") {
+            let price = parseInt(distance.value) * 0.21;
+            document.getElementById("price").innerHTML= (price * 0.8).toFixed(2);
             console.log(price * 0.8)
         }
-        else if (age === "minorenne") {
-            document.getElementById("price").innerHTML= (parseInt(price * 0.6)).toFixed(2);
+        else if (age.value === "minorenne") {
+            let price = parseInt(distance.value) * 0.21;
+            document.getElementById("price").innerHTML= (price * 0.6).toFixed(2);
         }
         else {
-            document.getElementById("price").innerHTML= (parseInt(price)).toFixed(2);
+            let price = parseInt(distance.value) * 0.21;
+            document.getElementById("price").innerHTML= parseInt(price).toFixed(2);
         } 
  
     }
