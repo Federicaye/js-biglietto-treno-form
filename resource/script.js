@@ -19,14 +19,17 @@ generate.addEventListener ('click',
             let price = parseInt(distance.value) * 0.21;
             document.getElementById("price").innerHTML= (price * 0.8).toFixed(2);
             console.log(price * 0.8)
+            document.getElementById("offer").innerHTML= 'offerta over 65';
         }
         else if (age.value === "minorenne") {
             let price = parseInt(distance.value) * 0.21;
             document.getElementById("price").innerHTML= (price * 0.6).toFixed(2);
+            document.getElementById("offer").innerHTML= 'offerta minorenni';
         }
         else {
             let price = parseInt(distance.value) * 0.21;
             document.getElementById("price").innerHTML= parseInt(price).toFixed(2);
+            document.getElementById("offer").innerHTML= 'prezzo standard';
         } 
  
     }
